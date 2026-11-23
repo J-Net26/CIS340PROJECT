@@ -1,0 +1,6 @@
+# File:           requirements.txt
+# Purpose:        The third-party packages DSCP needs (pip install -r requirements.txt).
+# Primary member: Albert (code / testing)
+
+# Reads CPU, memory, disk and temperature information on all platforms.
+psutil>=5.9

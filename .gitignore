@@ -1,0 +1,17 @@
+# File:           .gitignore
+# Purpose:        Keeps secrets and generated files out of the deliverable.
+# Primary member: Seth (security: TLS, HMAC, logging)
+
+# Secrets: the real config (contains the PSK) and the TLS key/certificate.
+config.ini
+certs/
+
+# Log files.
+logs/
+*.log
+
+# Compiled Python files and virtual environments.
+__pycache__/
+*.pyc
+.venv/
+venv/
