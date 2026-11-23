@@ -219,7 +219,7 @@ def handle_connection(raw, tls_context, psk, timeout, simulate, logger, session_
     conn = None
     try:
         # Do not let a silent client stall the TLS handshake forever.
-        raw.settimeout(10)
+        raw.settimeout(30)
         try:
             # State 1: perform the TLS handshake. From here on everything
             # sent or received through 'conn' is encrypted.
